@@ -3,7 +3,7 @@ import smtplib
 
 
 my_email = "pythontesttomasmico@gmail.com"
-my_password = "oykjncmgnxdvjtig"
+my_password = "xxxxx"
 
 
 app = Flask(__name__)
