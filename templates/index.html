@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Japan travel recommendations trip planning">
+    <meta name="keywords" content="japan travel restaurants routes plan days trip planning">
+    <meta name="author" content="Tomas Mico">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>My Japan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/blog.css">
+    <link rel="icon" href="static/images/favicon (3).ico">
+    <link rel="shortcut icon" href="static/images/favicon (3).ico" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="container">
+  <header class="blog-header text-center lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center ">
+        <a id="webtop" class="blog-header-logo text-body-emphasis">My Japan</a>
+      </div>
+  </header>
+</div>
+
+<div  class="container bg-white sticky-top">
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between zindex-tooltip">
+      <a class="p-2 link-secondary" href="#Tokyo">Tokyo</a>
+      <a class="p-2 link-secondary" href="#outertokyo">Tokyo day trips</a>
+      <a class="p-2 link-secondary" href="#Kyoto">Kyoto</a>
+      <a class="p-2 link-secondary" href="#otherplaces">Honourable mentions</a>
+      <a class="p-2 link-secondary" href="{{ url_for('get_contact') }}">Contact me</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+  <!-- Caja roja -->
+  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark row gradient-background">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">For those who ask for recommendations. </h1>
+      <p class="lead my-3">This is just quicker.</p>
+    </div>
+    <div class="col-md-6 px-0 align-items-center">
+      <img class="mx-auto d-block"  src="static/images/Japan_redwhite_map.png" width="50%">
+    </div>
+  </div>
+
+
+  <!-- Featured boxes -->
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Mandatory knowledge</strong>
+          <h3 class="mb-0">How to Toilet</h3>
+          <div class="mb-1 text-body-primary"><em>for dummies</em></div>
+          <p class="card-text mb-auto">The real reason you are travelling to the land of rising sun: Toto Toilet.</p>
+          <a class="stretched-link">Coming soon</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="static/images/japanesetoilet.png" alt="japanese_toilet" width="200" height="250">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Read before departure</strong>
+          <h3 class="mb-0">Japan's alphabets</h3>
+          <div class="mb-1 text-body-secondary"><em>jumpstart</em></div>
+          <p class="mb-auto">Because who wants <em>one</em> when you can have <em>three</em>.</p>
+          <a class="stretched-link">Coming soon</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="static/images/otokono.png" alt="japanese_toilet" width="200" height="250">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row g-5">
+<!-- The post -->
+    <div class="col-md-8">
+<!-- header -->
+      <h3 id="Tokyo" class="pb-4 mb-4 fst-italic border-bottom">
+        The places
+      </h3>
+
+<!-- Article Tokyo -->
+      <article class="blog-post mb-4">
+        <h2 class="blog-post-title mb-1">Tokyo</h2>
+        <h5 class="mt-3">The way in&out</h5>
+        <ul class="list-unstyled">
+          <li><strong>Haneda Airport:</strong> closer to the city centre. Easy commute to main city areas.</li>
+          <li><strong>Narita Airport:</strong> Iberia and BA mainly fly here, so if you're reading this, odds are that
+            you'll end up here. It's a quick train ride to Tokyo Station, with buses also available. <b>Don't</b> take a Taxi.</li>
+        </ul>
+        <h5>Moving around</h5>
+        <p>Japan's public transport is the most precise in the world. Buses will be at the stop at the exact time they are scheduled. Imagine the trains...</p>
+        <p>I recommend getting a <a href="https://www.pasmo.co.jp/visitors/en/normalpasmo/">PASMO</a> card in any mayor station. They cost around ¥500 and will work for underground and bus lines in all mayor Japanese cities.</p>
+        <p>Since I was living as a local, I can't really tell you how to obtain the weekly-biweekly Japan Rail pass, but it is a <strong>must</strong> for anyone visiting. For the cost of a return ticket from Tokyo to Kyoto you'll get to use the whole rail network. Remember to book it in <strong>advance!</strong> Read more <a href="https://japanrailpass.net/en/">here.</a></p>
+        <h5>Where to stay</h5>
+        <p>Japanese hotel rooms tend to be on the small side not being uncommon to find yourself in a room where you can
+          barely fit your luggage. In Tokyo, it's even worse. Be careful with <em>too</em>-budget hotels. Unless you're
+          looking for the experience, you can end up unknowingly in a capsule room. </p>
+        <p>You'll most probably be walking or using the underground most of the day, so I don't think hotel location is
+        the most important aspect of your Tokyo trip. Nevertheless, here are my personal recommendations. </p>
+        <div class="container mb-3 p-0">
+          <a href="#tokyomap">Go to map</a>
+        </div>
+
+        <ul class="no-bullets">
+          <li><strong>Tokyo Station - Hibiya</strong> <img src="static/images/circles/redcircle.png" height="15" alt="red circle">
+            <ul>
+              <li>Central area of Tokyo with superb connections to the rest of the city.</li>
+              <li>Beautiful area that once boasted being the financial centre of Asia.</li>
+              <li>Direct connection to Narita and Haneda airports.</li>
+              <li>Close by attractions include the Imperial Palace, Tsukiji Fish market and the Artizon Museum.</li>
+            </ul></li>
+          <li><strong>Roppongi - Akasaka - Azabu-Juban</strong> <img src="static/images/circles/greencircle.png" height="15" alt="green circle">
+            <ul>
+              <li>Also very centric so its easy to get around Tokyo but with worse connections to the airports.</li>
+              <li>Most expensive areas to live, so no surprise they're Tokyo's expat central.</li>
+              <li>Wide range of hotels at all price levels.</li>
+              <li>Close by attractions include Tokyo Tower.</li>
+            </ul></li>
+          <li><strong>Shibuya</strong> <img src="static/images/circles/bluecircle.png" height="15" alt="blue circle">
+            <ul>
+              <li>Most visited area in the city, but that doesn't make it the best.</li>
+              <li>It's where you'll find the most partying so a prime location to find the infamous <em>salaryman</em> passed out.</li>
+              <li>If you're into luxury shopping, close by Omotesando is the place to go.</li>
+              <li>Fun area to visit, but can't really recommend staying.</li>
+              <li>Close by attractions include Shibuya crossing, Meiji Park and Harajuku.</li>
+            </ul></li>
+          <li><strong>Shinjuku</strong> <img src="static/images/circles/blackdottedcircle.png" height="15" alt="dotted black circle">
+            <ul>
+              <li>The area where you'll find the cheapest stay, but at a price. Although crime is basically non-existent in Japan, it is by far the "dodgiest" area in Tokyo.</li>
+              <li>Super fun to go out for a stroll when the sun goes down.</li>
+              <li>Close by attractions include Golden Gai and Shinjuku Gyoen Garden.</li>
+            </ul></li>
+          <li><strong>Asakusa</strong> <img src="static/images/circles/reddottedcircle.png" height="15" alt="dotted red circle">
+            <ul>
+              <li>Tokyo's "old town".</li>
+              <li>Beautiful area with plenty of traditional japanese temples.</li>
+              <li>Close by attractions include Senso-Ji temple and Tokyo Skytree.</li>
+            </ul></li>
+        </ul>
+        <div id="tokyomap" class="container mt-3 mb-5">
+          <img src="static/images/Tokyo Hoteles1.png" class="rounded img-fluid">
+        </div>
+        <h5>Where to eat</h5>
+        <p>This may come as a shock, but Japan is slowing transforming into a modern economy, so expect many <strong>cash only</strong> establishments.</p>
+        <ul class="no-bullets">
+          <li>As a rule, anything above a 3.8 in Google Maps will be good, but here are a few of my favourites:
+          <ul>
+            <li><a href="https://goo.gl/maps/t6cAYxw9b2WUz4r49">SG LOW</a>: Japanese Izakaya with a modern twist.</li>
+            <li><a href="https://goo.gl/maps/pfinBJkNYqJprZ1U9">Shirubee Shibuya</a>: run down izakaya with excellent food.</li>
+            <li><a href="https://goo.gl/maps/hx4KyPasrxGx4LTGA">Andy's Shin Hinomoto</a>: authentic izakaya underneath the train tracks.</li>
+            <li><a href="https://goo.gl/maps/p9ygZAqXWstfRviv9">Ramen Nujaki</a>: all ramen shops are good but here is an example.</li>
+            <li><a href="https://goo.gl/maps/BTRqcvhYurCgesCCA">Gonpachi</a>: Kill bill fan? Place to go. Food is actually good and cheap for a <em>tourist trap.</em></li>
+            <li><a href="https://goo.gl/maps/nizBAaLFNn5ysMAy9">Misakiko</a>: cheap rotating sushi brought to you by train.</li>
+            <li><a href="https://goo.gl/maps/JHv29yXmYkm6D3vdA">Gyozaro</a>: visiting Harajuku? It's gyoza o'clock.</li>
+            <li><a href="https://goo.gl/maps/g1KESdNLD79W51Ae8">Tsukiji Fish market</a>: only for lunch, plenty of food stalls to choose from.</li>
+          </ul></li>
+        </ul>
+
+          <p class="mt-1">While at an Izakaya, don't forget to ask if they have <strong>nomihodai</strong>. Usually around ¥1,500-¥3,000 per person all you can drink experience.
+            Even <em>good</em> places can have it. A beer can go for as much as ¥850 so...worth it.</p>
+          <p>Remember, <strong>no tipping</strong>. If you leave a few coins on the table, waiters will chase you down the street to give them back.</p>
+
+          <h5>Where to drink</h5>
+        <ul class="no-bullets">
+          <li>Don't forget to stop by some of the best cocktail bars in asia. Here a few:
+          <ul>
+             <li><a href="https://goo.gl/maps/d7obK2XVwwQtAbYPA">High Five</a>: one of the best cocktail experiences in Tokyo.
+                ¥1,000 per person service charge.</li>
+             <li><a href="https://goo.gl/maps/43wFv1Y8MJAAMzGA6">The SG Club</a>: same people as SG Low.
+             </li>
+             <li><a href="https://goo.gl/maps/oPB5UaXTQTk4FVXn6">Bar TRENCH</a>: great in every aspect. If full, they'll
+                send you to its sister <a href="https://goo.gl/maps/2XasCynjCwFpTcoV9>">bar TRIAD</a> round the corner.</li>
+          </ul>
+          </li>
+        </ul>
+
+        </article>
+
+      <hr>
+
+<!-- Article Outer Tokyo -->
+      <article class="blog-post mb-4">
+        <h3 id="outertokyo" class="pb-4 mb-4 fst-italic"> </h3>
+        <h3 class="blog-post-title mb-1">Kamakura</h3>
+        <h5><em>Temple central</em></h5>
+        <p>Just one-hour train ride south of Tokyo you'll find Kamakura, once Japan's medieval capital.
+          I don't necessarily recommend staying at Kamakura. One day is plenty of time to see it.</p>
+        <p>Hopping-off the train at Kita-Kamakura and walking down to the town is the way to go. The temples bellow are in order if you choose to do so. </p>
+
+        <h5 class="mt-3">What to visit</h5>
+        <ul class="no-bullets">
+          <li>There's hundred of different shrines in and around the city. Here my favourites:
+            <ul>
+              <li><a href="https://goo.gl/maps/W3tRUWGUC1ggyrxg9">Engaku-ji</a>: huge zen buddhist temple.</li>
+              <li><a href="https://goo.gl/maps/3zRk21mwED9uabbz9">Hokokuji Temple</a>: within you'll find a bamboo forest.</li>
+              <li><a href="https://goo.gl/maps/kv1Xm188Q1eq7TrM8">Hokokuji Temple</a>: within you'll find a bamboo forest.</li>
+              <li><a href="https://goo.gl/maps/AYu4FqapLT8y1P3C6">Kamakura Hasedera</a>: bit of a climb, but worth the views.</li>
+              <li><a href="https://goo.gl/maps/R1kLFNxmrYfhLoo17">Kotoku-in</a>: giant Buddha.</li>
+            </ul></li>
+        </ul>
+        <h5 class="mt-3">Where to eat</h5>
+        <ul class="no-bullets">
+          <li>While visiting Kamakura you mainly have 2 options:
+          <ul>
+            <li><a href="https://goo.gl/maps/YmDS8GQE6iJn3So88">Komachi-dori</a> is the main food hub in the city.</li>
+            <li>head down to the beach to any of the seaside restaurants.</li>
+          </ul></li>
+        </ul>
+
+        <hr>
+
+        <h3 class="blog-post-title mb-1">Nikko</h3>
+        <p>Getting to Nikko takes a bit longer. It's a 2hour ride from Tokyo Station. Depending on your schedule I recommend staying the night by
+        <a href="https://goo.gl/maps/u3F5aS2uNiRBgVsS6">lake Chuzenji</a> and trying out one of the traditional Japanese <strong>Ryokan</strong> hotels.</p>
+
+        <h5 class="mt-3">What to visit</h5>
+        <ul class="no-bullets">
+          <li>There's hundred of different shrines in and around the city. Here my favourites:
+            <ul>
+              <li><a href="hhttps://goo.gl/maps/5R6hDxct3JjVxXp66">Nikko Toshogu</a>: shrine dedicated to the first Shogun.</li>
+              <li><a href="https://goo.gl/maps/4XVa1N5zgEkdJvZL6">Kanmangafuchi Abyss</a>: walk by the river surrounded by nature.</li>
+              <li><a href="https://goo.gl/maps/zsnoRh8VUcaRFDLg8">Takino'o Shrine</a>: escape the crowds and head into the forest.</li>
+            </ul></li>
+        </ul>
+
+        <hr>
+
+        <h3 class="blog-post-title mb-1">Mount Fuji</h3>
+        <h5><em>No intro needed</em></h5>
+        <p>For the best photos, head to <a href="https://goo.gl/maps/hmM84GaHZDW7WYHw7">Chureito Pagoda</a>.
+        Mount Fuji always has a cloud on top of it, so consider yourself lucky if you get to see the top.</p>
+
+        <hr>
+
+        <h3 class="blog-post-title mb-1">Lake Hakone</h3>
+        <p>A good place to enjoy a stay at a <strong>Ryokan</strong>, Japan's traditional hotels.
+          These hotels normally include dinner service, which will be served in your room. Also, forget about beds, you'll be sleeping on the floor.</p>
+      </article>
+      <hr>
+
+<!-- Article Kyoto -->
+      <article  class="blog-post mb-4">
+        <!-- header -->
+        <h3 id="Kyoto" class="pb-4 mb-4 fst-italic"> </h3>
+        <h2 class="blog-post-title mb-1">Kyoto</h2>
+        <h5><em>The old Capital</em></h5>
+         <h5 class="mt-3">The way in&out</h5>
+        <ul class="list-unstyled">
+          <li><strong>Train:</strong> Shinkansen from tokyo every 30 minutes. Easiest and fastest way to get there.</li>
+          <li><strong>Flying:</strong> closest airport is in Osaka, with daily flights from Tokyo starting around ¥10,000.</li>
+        </ul>
+        <h5>Where to stay</h5>
+        <p>Although Kyoto is relatively big, I only recommend staying around the Gion neighbourhood and the immediate surroundings. The rest of the city has little to offer.</p>
+        <h5>Moving around</h5>
+        <p>Again, Google Maps is here to the rescue. Bus times are extremely precise and the best way to move around the city.</p>
+        <h5 class="mt-3">What to visit</h5>
+        <ul class="no-bullets">
+          <li>Much like Kamakura, Kyoto is packed with temples to visit. Here a few of my favorites:
+            <ul>
+              <li><a href="https://goo.gl/maps/QCQwj9o1njtaFRMCA">Kiyomizu-dera</a>: Buddhist temple with scenic views.</li>
+              <li><a href="https://goo.gl/maps/bAwBSja3NHx1YxUFA">Sanneizaka</a>: pedestrian street surrounded by traditional japanese architecture.</li>
+              <li><a href="https://goo.gl/maps/RshkLC4syEFzFREi9">Chion-in Temple</a>: impresive Buddhist temple.</li>
+              <li><a href="https://goo.gl/maps/6Dy7PQWVYML5MXmn6">Bamboo forest</a>: bit of a letdown if you ask me, but everyone seems to like it.</li>
+              <li><a href="https://goo.gl/maps/tgBJtLHHaf2CJCuT7">Kinkaku-ji</a>: the golden temple.</li>
+              <li><a href="https://goo.gl/maps/xaAR5xUuRSQixtMK8">Fushimi Inari Taisha</a>: fox temple with hundreds of tori-gate path.</li>
+              <li><a href="https://goo.gl/maps/35G1uVDQeHpYrPqU8">Imperial Palace</a>: the old imperial epicentre.</li>
+              <li><a href="https://goo.gl/maps/ojaCwGHFZnW44txH8">Nijo Castle</a>: the real seat of power.</li>
+            </ul></li>
+        </ul>
+        <h5 class="mt-3">Where to eat</h5>
+        <ul class="no-bullets">
+          <li>Much like Kamakura, Kyoto is packed with temples to visit. Here a few of my favorites:
+            <ul>
+              <li><a href="https://goo.gl/maps/vR29xLYoYr6cTSrs6">Enen</a>: surprisingly good yakinikyu restaurant tucked in between old wooden houses.</li>
+            </ul></li>
+        </ul>
+
+      </article>
+      <hr>
+<!-- Article other places -->
+      <article  class="blog-post mb-4">
+        <!-- header -->
+        <h3 id="otherplaces" class="pb-4 mb-4 fst-italic"> </h3>
+        <h2 class="blog-post-title mb-1">Worth the visit</h2>
+         <h4 class="mt-3">Takayama and Shirakawa-go</h4>
+        <p>Staying at Takayama and visiting Shirakawa provides a unique insight into local japanese living and traditional japanese house styles.
+        It's a bit of a detour, so I only recommend it if you have the time to spare. Although getting to Takayama is tricky,
+          <a href="https://www.nouhibus.co.jp/route_bus/takayama-shirakawago-line-en/">buses</a> are available from Takayama to Shirakawa.</p>
+        <h5 class="mt-3">What to visit</h5>
+        <ul class="no-bullets">
+          <li> Some recommended stops:
+            <ul>
+              <li><a href="https://goo.gl/maps/Zq3Gfw7znumZLSe29">Takayama's historical houses</a></li>
+              <li><a href="https://goo.gl/maps/iQs32CLtxGtZYYg26">Sake brewery</a></li>
+              <li><a href="https://goo.gl/maps/pnkVniFeRbHTySS59">Sake brewery</a></li>
+              <li><a href="https://goo.gl/maps/q1jUbEomqpieWVkn6">Shirakawa opbservation deck</a>: best views of the town.</li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <h4 class="mt-3">Osaka and Nara</h4>
+        <p>Japan's food mecca, Osaka is a worth-it stop. On the way to Nara from Kyoto so it isn't too much of a detour.
+         Don't forget to wait for the deer to bow before feeding them!
+        </p>
+        <h5 class="mt-3">What to visit</h5>
+        <ul class="no-bullets">
+          <li>
+            <ul>
+              <li><a href="https://goo.gl/maps/T1pUHLvapqALsAvE8">Osaka castle</a>.</li>
+              <li><a href="https://goo.gl/maps/5Pztn6AauCkTgavQ7">Dotonbori</a>: Lose yourself in the endless restaurants.</li>
+              <li><a href="https://goo.gl/maps/dyf4Gx3svWfHuRAv8">Todaji</a>: mid-700s buddhist temple with Japan's largest Buddha.</li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <h4 class="mt-3">Himeji Castle</h4>
+        <p>The iconic <a href="https://goo.gl/maps/gwWP5qWWDHE9mMNu8">Himeji Castle</a> stands on your way from Osaka to
+          Hiroshima. If you're planning to go that far south, think about giving it a visit. It's one of the few
+          places I regret not going to.</p>
+        <hr>
+        <h4 class="mt-3">Hiroshima - Miyajima </h4>
+        <p>Little has to be said about Hiroshima. Miyajima is beautiful island just off the coast of Hiroshima. You can get there
+          by boat or train.
+        </p>
+        <h5 class="mt-3">What to visit</h5>
+        <ul class="no-bullets">
+          <li>
+            <ul>
+              <li><a href="https://goo.gl/maps/SYnKL4eK3SUbpCng9">Peace Memorial</a>.</li>
+              <li><a href="https://goo.gl/maps/Lh2Jss6Z7p7VNip1A">Atomic bomb dome</a></li>
+              <li><a href="https://goo.gl/maps/XufHzeh7PNeNbS6Q6">Itsukushima Jinja</a>: orange shinto gate that floats at high tide.</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+
+    </div>
+    <!-- Archives, right side -->
+    <div class="col-md-4">
+
+      <div class="container sticky-top2 pt-0 bg-secondary-subtle rounded pt-2">
+      <div class="">
+        <h4 class="fst-italic">Some photos from the Maestro</h4>
+        <div class="container" id="featured-3">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active rounded">
+                <img src="static/images/photos carousel/20210207-_MG_2655.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20210207-_MG_2685.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20210324-_MG_3185.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20210517-_MG_4966.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20210904-IMG_2403.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20220405-IMG_0685.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20211119-IMG_5348.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20211228-IMG_7063.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20210110-2453.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20210110-2496.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20210327-_MG_3427.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="static/images/photos carousel/20210110-2450.jpg" class="d-block w-100 rounded" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr>
+    <!-- Elsewhere, right side -->
+        <div class="p-4">
+          <h4 class="fst-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><img src="static/images/circles/logo-ig-png-32457.png" height="20"> <a href="https://www.instagram.com/tomicosan/">Instagram</a></li>
+          </ol>
+        </div>
+        </div>
+    </div>
+    </div>
+</main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<footer class="blog-footer">
+  <div class="container text-center">
+    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <p>
+      <p>© Copyright 2023 Tomás Micó</p>
+    <p>
+      <a href="#webtop">Back to top</a>
+    </p>
+  </div>
+</footer>
+
+
+
+</html>
